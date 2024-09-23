@@ -14,7 +14,7 @@ pipeline {
                         mvn clean verify sonar:sonar \
                           -Dsonar.projectKey=jenkins-sonarqube \
                           -Dsonar.projectName="jenkins-sonarqube" \
-                          -Dsonar.host.url=http://localhost:9000 \
+                          -Dsonar.host.url=http://sonarqube:9000 \
                           -Dsonar.token=sqp_4eecf3724767b7526246072f8cb28e8f24ec5c0e
                     '''
                     echo 'SonarQube Analysis Completed'
